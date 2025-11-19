@@ -46,3 +46,15 @@ h3 {
   background-repeat: no-repeat;
   background-size: cover;
 }
+
+#lower-text {
+  display: flex;
+}
+
+#sponsor-info {
+  flex-basis: 40%;
+}
+
+#abstract {
+  flex-basis: 60%;
+}
