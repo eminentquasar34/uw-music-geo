@@ -66,3 +66,13 @@ I rarely listen to house music, and it rarely brings me joy, but that night it p
         <source src="audio/rwm_nirvana_house_music.m4a">
     </audio>`
   );
+
+// JZ Amazon Truck
+L.circleMarker([47.65601, -122.31499], {
+  color: GRAY,
+}).addTo(map).bindPopup(`<h3>Jasmine Z: Amazon Truck</h3>
+I encountered an Amazon track blasting Bollywood music outside of Lander Hall while walking home. While loud and slightly jarring since it was late at night, the music highlighted the juxtaposition between my exhausted mental state and the delivery driver's energetic enthusiasm. The tempo and sheer volume of the music seemed to be the momentum that was powering the driver through his late-night route.    
+<br><br>
+<audio controls>
+        <source src="audio/jz_amazon_truck.m4a">
+    </audio>`);
