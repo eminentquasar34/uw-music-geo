@@ -76,3 +76,13 @@ I encountered an Amazon track blasting Bollywood music outside of Lander Hall wh
 <audio controls>
         <source src="audio/jz_amazon_truck.m4a">
     </audio>`);
+
+// JZ Happy Birthday
+L.circleMarker([47.65922, -122.30865], {
+  color: YELLOW,
+}).addTo(map).bindPopup(`<h3>Jasmine Z: Happy Birthday</h3>
+Before an Asian Business Student Association meeting in PACCAR Hall, officers spontaneously sang Happy Birthday to the president of the club and presented him with a cake. It was heartwarming to see how the club has transformed professional relationships into lasting friendships.
+<br><br>
+<audio controls>
+        <source src="audio/jz_happy_birthday.m4a">
+    </audio>`);
