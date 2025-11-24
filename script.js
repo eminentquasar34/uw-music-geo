@@ -11,9 +11,8 @@ var PINK = "#FFC0CB";
 
 var map = L.map("map").setView([47.657, -122.303], 15);
 
-L.tileLayer("https://tile.openstreetmap.org/{z}/{x}/{y}.png", {
-  attribution:
-    '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
+L.tileLayer("https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}.png", {
+  attribution: "©OpenStreetMap, ©Carto",
 }).addTo(map);
 
 L.circleMarker([47.66216, -122.30001], {
