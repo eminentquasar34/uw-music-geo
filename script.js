@@ -3,6 +3,7 @@ var ORANGE = "#FFBF00";
 var YELLOW = "#FFFF00";
 var GREEN = "#228B22";
 var RED = "#880808";
+var BLUE = "#00008B";
 
 var map = L.map("map").setView([47.657, -122.303], 15);
 
@@ -125,6 +126,27 @@ L.circleMarker([47.66431, -122.31392], {
 }).addTo(map).bindPopup(`<h3>Jordan C: Guitar for Mom</h3>
 (Garbled sample taken from low-quality earbud microphone)
 <br><br>
-I heard Perfect by Ed Sheeran playing at the grocery store. I do not like this song, and I do not like Ed Sheeran's music (just personal preference). Hearing this song made me upset and annoyed.        <audio controls>
+I heard Perfect by Ed Sheeran playing at the grocery store. I do not like this song, and I do not like Ed Sheeran's music (just personal preference). Hearing this song made me upset and annoyed.        
+<audio controls>
                 <source src="audio/jc_ed_sheeran_safeway.m4a">
             </audio>`);
+
+// JZ Chimes in Red Square
+L.circleMarker([47.65587, -122.30977], {
+  color: YELLOW,
+}).addTo(map).bindPopup(`<h3>Jasmine Z: Chimes in Red Square</h3>
+While walking through Red Square on my way to Odegaard, I heard disembodied chimes ringing out into the evening. They sounded too clear to be coming from inside a building, but I couldn't see anyone playing them from outside either. While slightly eerie, the chimes were calming and reminded me of the spontaneity of life (especially in nodes of human activity).
+<br><br>
+<audio controls>                  
+<source src="audio/jz_chimes_in_red_square.m4a">
+              </audio>`);
+
+// JZ Percussion Performance in Red Square
+L.circleMarker([47.65707, -122.30754], {
+  color: BLUE,
+}).addTo(map).bindPopup(`<h3>Jasmine Z: Percussion Performance in the Quad</h3>
+I saw this musical performance as I was walking through the Quad. There were 3-4 people on the lawn playing various types of hand percussion and bells while another person sang. I believe they were supporting a cause/organization/person, but I didn't pay much attention because I was in a rush. As I walked away, I was reminded of the many other things that I haven't been able to make time for in college, including playing music (especially because like the performers, I also play percussion).
+<br><br>
+<audio controls>    
+<source src="audio/jz_percussion_performance_in_quad.m4a">
+              </audio>`);
