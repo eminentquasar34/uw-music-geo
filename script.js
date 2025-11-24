@@ -127,10 +127,11 @@ This quarter, I purchased a guitar. I've been trying to learn Landslide by Fleet
 // JC Ed Sheeran in Safeway
 L.circleMarker([47.66431, -122.31392], {
   color: RED,
-}).addTo(map).bindPopup(`<h3>Jordan C: Guitar for Mom</h3>
+}).addTo(map).bindPopup(`<h3>Jordan C: Ed Sheeran in Safeway</h3>
 (Garbled sample taken from low-quality earbud microphone)
 <br><br>
 I heard Perfect by Ed Sheeran playing at the grocery store. I do not like this song, and I do not like Ed Sheeran's music (just personal preference). Hearing this song made me upset and annoyed.        
+<br><br>
 <audio controls>
                 <source src="audio/jc_ed_sheeran_safeway.m4a">
             </audio>`);
