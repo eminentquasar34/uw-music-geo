@@ -2,6 +2,7 @@ var GRAY = "#808080";
 var ORANGE = "#FFBF00";
 var YELLOW = "#FFFF00";
 var GREEN = "#228B22";
+var RED = "#880808";
 
 var map = L.map("map").setView([47.657, -122.303], 15);
 
@@ -99,3 +100,31 @@ I was walking home and heard this loud music blasting from the people in front o
   <audio controls>
           <source src="audio/jc_sidewalk_speaker.m4a">
       </audio>`);
+
+// JC Climbing Gym
+L.circleMarker([47.66153, -122.31294], {
+  color: GRAY,
+}).addTo(map).bindPopup(`<h3>Jordan C: Climbing Gym</h3>
+I took this sample when I was climbing at the climbing gym. When I'm climbing, I get very in-the-zone. I never really notice the music playing because of my focus. I wasn't paying any attention to the music and don't think it had any effect on me.      <br><br>
+    <audio controls>
+            <source src="audio/jc_climbing_gym.m4a">
+        </audio>`);
+
+// JC Guitar for Mom
+L.circleMarker([47.66339, -122.31389], {
+  color: YELLOW,
+}).addTo(map).bindPopup(`<h3>Jordan C: Guitar for Mom</h3>
+This quarter, I purchased a guitar. I've been trying to learn Landslide by Fleetwood Mac. This audio clip is from one of my initial attempts at singing and playing at the same time. I sent it to my mom. Although learning an instrument can be difficult, playing guitar and singing in my room always feels peaceful and happy.
+      <audio controls>
+              <source src="audio/jc_guitar_for_mom.m4a">
+          </audio>`);
+
+// JC Ed Sheeran in Safeway
+L.circleMarker([47.66431, -122.31392], {
+  color: RED,
+}).addTo(map).bindPopup(`<h3>Jordan C: Guitar for Mom</h3>
+(Garbled sample taken from low-quality earbud microphone)
+<br><br>
+I heard Perfect by Ed Sheeran playing at the grocery store. I do not like this song, and I do not like Ed Sheeran's music (just personal preference). Hearing this song made me upset and annoyed.        <audio controls>
+                <source src="audio/jc_ed_sheeran_safeway.m4a">
+            </audio>`);
