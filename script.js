@@ -1,9 +1,13 @@
+/**
+ * Constants for colors
+ */
 var GRAY = "#808080";
 var ORANGE = "#FFBF00";
 var YELLOW = "#FFFF00";
 var GREEN = "#228B22";
 var RED = "#880808";
 var BLUE = "#00008B";
+var PINK = "#FFC0CB";
 
 var map = L.map("map").setView([47.657, -122.303], 15);
 
@@ -150,3 +154,23 @@ I saw this musical performance as I was walking through the Quad. There were 3-4
 <audio controls>    
 <source src="audio/jz_percussion_performance_in_quad.m4a">
               </audio>`);
+
+// JZ Phantom of the Opera
+L.circleMarker([47.6557, -122.31722], {
+  color: YELLOW,
+}).addTo(map).bindPopup(`<h3>Jasmine Z: Phantom of the Opera</h3>
+I've always loved listening to musical theater music and the soundtrack from The Phantom of the Opera is my favorite by far. This clip is me listening to "The Point of No Return" while taking a break from studying. 
+  <br><br>
+  <audio controls>    
+  <source src="audio/jz_phantom_of_the_opera.m4a">
+                </audio>`);
+
+// RWM Avole on the Ave
+L.circleMarker([47.66289, -122.31339], {
+  color: PINK,
+}).addTo(map).bindPopup(`<h3>Ruth WM: Avole on the Ave</h3>
+I was walking down the Ave zoned out, thinking about whatever my to do list, when I was drawn to music bouncing out of a nearby coffee shop. Upon entry, I saw a DJ booth nestled behind the counter next to the espresso machine. It was a total vibe, but I stuck out like a sore thumb.
+    <br><br>
+    <audio controls>    
+    <source src="audio/rwm_avole_on_ave.m4a">
+                  </audio>`);
