@@ -1,6 +1,7 @@
 var GRAY = "#808080";
 var ORANGE = "#FFBF00";
 var YELLOW = "#FFFF00";
+var GREEN = "#228B22";
 
 var map = L.map("map").setView([47.657, -122.303], 15);
 
@@ -86,3 +87,15 @@ Before an Asian Business Student Association meeting in PACCAR Hall, officers sp
 <audio controls>
         <source src="audio/jz_happy_birthday.m4a">
     </audio>`);
+
+// JC Loud Music from Speaker
+L.circleMarker([47.66363, -122.31316], {
+  color: GREEN,
+}).addTo(map).bindPopup(`<h3>Jordan C: Loud Music From Speaker</h3>
+(Garbled sample taken from low-quality earbud microphone)
+<br><br>
+I was walking home and heard this loud music blasting from the people in front of me. One of them had a speaker in their backpack. I didn't mind the music type, but the volume was too loud for me, and it made me frustrated. I'm sensitive to loud sounds, and it irks me when people are insensitive and do things like play loud music or rev their engines in public.
+    <br><br>
+  <audio controls>
+          <source src="audio/jc_sidewalk_speaker.m4a">
+      </audio>`);
