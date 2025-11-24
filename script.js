@@ -6,12 +6,12 @@ var ORANGE = "#FFBF00";
 var YELLOW = "#FFFF00";
 var GREEN = "#228B22";
 var RED = "#880808";
-var BLUE = "#00008B";
+var BLUE = "#0000FF";
 var PINK = "#FFC0CB";
 
 var map = L.map("map").setView([47.657, -122.303], 15);
 
-L.tileLayer("https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}.png", {
+L.tileLayer("https://{s}.basemaps.cartocdn.com/light_nolabels/{z}/{x}/{y}.png", {
   attribution: "©OpenStreetMap, ©Carto",
 }).addTo(map);
 
