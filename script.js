@@ -1,13 +1,13 @@
 /**
  * Constants for colors
  */
-var GRAY = "#808080";
-var ORANGE = "#FFBF00";
-var YELLOW = "#FFEA00";
-var GREEN = "#228B22";
-var RED = "#880808";
-var BLUE = "#0000FF";
-var PINK = "#FFC0CB";
+var GRAY = "#808080"; // Indifferent
+var ORANGE = "#FFBF00"; // N/A
+var YELLOW = "#FFEA00"; // Bright yellow for happy
+var GREEN = "#808000"; // Olive green for disgust
+var RED = "#C41E3A"; // Cardinal red for anger
+var BLUE = "#0047AB"; // Cobalt blue for sadness
+var PINK = "#FF69B4"; // Hot pink for embarrassment
 
 var map = L.map("map").setView([47.657, -122.303], 15);
 
