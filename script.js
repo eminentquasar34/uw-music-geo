@@ -3,7 +3,7 @@
  */
 var GRAY = "#808080";
 var ORANGE = "#FFBF00";
-var YELLOW = "#FFFF00";
+var YELLOW = "#FFEA00";
 var GREEN = "#228B22";
 var RED = "#880808";
 var BLUE = "#0000FF";
