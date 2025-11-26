@@ -9,7 +9,7 @@ var RED = "#C41E3A"; // Cardinal red for anger
 var BLUE = "#0047AB"; // Cobalt blue for sadness
 var PINK = "#FF69B4"; // Hot pink for embarrassment
 
-var map = L.map("map").setView([47.657, -122.303], 15);
+var map = L.map("map").setView([47.643, -122.303], 13.2);
 
 L.tileLayer("https://{s}.basemaps.cartocdn.com/light_nolabels/{z}/{x}/{y}.png", {
   attribution: "©OpenStreetMap, ©Carto",
@@ -189,6 +189,7 @@ I was walking down the Ave zoned out, thinking about whatever my to do list, whe
     <source src="audio/rwm_avole_on_ave.m4a">
                   </audio>`);
 
+// RWM Car Mechanics Pop Up Shop
 L.circleMarker([47.65368, -122.31386], {
   color: YELLOW,
   radius: 15,
@@ -198,3 +199,79 @@ If I am ever walking through this area late at night, a makeshift car mechanics 
     <audio controls>    
     <source src="audio/rwm_car_mechanics_pop_up_shop.m4a">
                   </audio>`);
+
+// RWM Farmers Market Live Music
+L.circleMarker([47.66582, -122.3129], {
+  color: YELLOW,
+  radius: 15,
+}).addTo(map).bindPopup(`<h3>Ruth WM: Farmers Market Live Music</h3>
+    Every Saturday busker's scatter across U-District's farmer's market giving the environment life. For customer's like me, this music often blends into the background of the experience. It is only when they stop, that we remember they were ever there. 
+    <br><br>
+    <audio controls>
+    <source src="rwm_farmers_market_live_music.m4a">
+    </audio>`);
+
+// RWM Harmonica Player
+L.circleMarker([47.65552, -122.30449], {
+  color: YELLOW,
+  radius: 15,
+}).addTo(map).bindPopup(`<h3>Ruth WM: Harmonica Player</h3>
+There was a pleasant harmonica player walking along this path on Saturday. They were fiddling and exploring various sounds with the instrument before putting it away as it started to rain. This shows how music can play small beautiful moments in other peoples' day.    
+    <br><br>
+    <audio controls>
+    <source src="rwm_harmonica_player.m4a">
+    </audio>`);
+
+// AM H-Mart Music
+L.circleMarker([47.65892, -122.31307], {
+  color: ORANGE,
+  radius: 15,
+}).addTo(map).bindPopup(`<h3>Alexis M: H-Mart Music</h3>
+    As I was pacing through Hmart's aisles looking for Goji beries, I came across fairly happy music playing within the speakers of the store. This music brought me a sense of calm. While I struggled to find what I was looking for, I felt soothed by the music.
+    <br><br>
+    <audio controls>
+    <source src="am_hmart_music.m4a">
+    </audio>
+    `);
+
+L.circleMarker([47.6549, -122.30653], {
+  color: GRAY,
+  radius: 15,
+}).addTo(map).bindPopup(`<h3>Alexis M: Rock and Roll in Mandarin Class</h3>
+    To start off class this morning, my Mandarin teacher introduced different music genres and their names in Chinese. We proceeded to listen to a variety of Rock and Roll songs to analyze the lyrics. What a fun and engaging way to start the day!
+    <br><br>
+    <audio controls>
+    <source src="am_rock_and_roll_chinese_class.m4a>
+    </audio>`);
+
+L.circleMarker([47.66208, -122.31449], {
+  color: GRAY,
+  radius: 15,
+}).addTo(map).bindPopup(`<h3>Alexis M: Elevator Music</h3>
+On my way down to class, the elevator music lifted my spirits and gave me a brief pause from the morning chaos ... an intentional moment before my first class of the day.
+    <br><br>
+    <audio controls>
+    <source src="am_elevator_music.m4a>
+    </audio>`);
+
+L.circleMarker([47.6559, -122.30949], {
+  color: RED,
+  radius: 15,
+}).addTo(map).bindPopup(`<h3>Alexis M: Rain in Red Square</h3>
+    On my walk to class, I listened closely to the gentle patter of rain on my umbrella. It's quiet, soothing rhythm that caught my ear.
+    <br><br>
+    <audio controls>
+    <source src="am_rain_in_red_square.m4a">
+    </audio>
+    `);
+
+L.circleMarker([47.6139, -122.31968], {
+  color: YELLOW,
+  radius: 15,
+}).addTo(map).bindPopup(`<h3>Alexis M: Xavier So Based Concert</h3>
+An excerpt from a concert featuring a smaller artist, Xavier So Based,  just before he performed his song, "Double Whammy." As one of his most popular tracks, the crowd buzzed with excitement. Voices shouted, '"I love you Xav!"
+        <br><br>
+        <audio controls>
+        <source src="am_xavier_so_based_concert.m4a">
+        </audio>
+        `);
