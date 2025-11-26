@@ -208,7 +208,7 @@ L.circleMarker([47.66582, -122.3129], {
     Every Saturday busker's scatter across U-District's farmer's market giving the environment life. For customer's like me, this music often blends into the background of the experience. It is only when they stop, that we remember they were ever there. 
     <br><br>
     <audio controls>
-    <source src="rwm_farmers_market_live_music.m4a">
+    <source src="audio/rwm_farmers_market_live_music.m4a">
     </audio>`);
 
 // RWM Harmonica Player
@@ -219,7 +219,7 @@ L.circleMarker([47.65552, -122.30449], {
 There was a pleasant harmonica player walking along this path on Saturday. They were fiddling and exploring various sounds with the instrument before putting it away as it started to rain. This shows how music can play small beautiful moments in other peoples' day.    
     <br><br>
     <audio controls>
-    <source src="rwm_harmonica_player.m4a">
+    <source src="audio/rwm_harmonica_player.m4a">
     </audio>`);
 
 // AM H-Mart Music
@@ -230,7 +230,7 @@ L.circleMarker([47.65892, -122.31307], {
     As I was pacing through Hmart's aisles looking for Goji beries, I came across fairly happy music playing within the speakers of the store. This music brought me a sense of calm. While I struggled to find what I was looking for, I felt soothed by the music.
     <br><br>
     <audio controls>
-    <source src="am_hmart_music.m4a">
+    <source src="audio/am_hmart_music.m4a">
     </audio>
     `);
 
@@ -241,7 +241,7 @@ L.circleMarker([47.6549, -122.30653], {
     To start off class this morning, my Mandarin teacher introduced different music genres and their names in Chinese. We proceeded to listen to a variety of Rock and Roll songs to analyze the lyrics. What a fun and engaging way to start the day!
     <br><br>
     <audio controls>
-    <source src="am_rock_and_roll_chinese_class.m4a>
+    <source src="audio/am_rock_and_roll_chinese_class.m4a>
     </audio>`);
 
 L.circleMarker([47.66208, -122.31449], {
@@ -251,7 +251,7 @@ L.circleMarker([47.66208, -122.31449], {
 On my way down to class, the elevator music lifted my spirits and gave me a brief pause from the morning chaos ... an intentional moment before my first class of the day.
     <br><br>
     <audio controls>
-    <source src="am_elevator_music.m4a>
+    <source src="audio/am_elevator_music.m4a>
     </audio>`);
 
 L.circleMarker([47.6559, -122.30949], {
@@ -261,7 +261,7 @@ L.circleMarker([47.6559, -122.30949], {
     On my walk to class, I listened closely to the gentle patter of rain on my umbrella. It's quiet, soothing rhythm that caught my ear.
     <br><br>
     <audio controls>
-    <source src="am_rain_in_red_square.m4a">
+    <source src="audio/am_rain_in_red_square.m4a">
     </audio>
     `);
 
@@ -272,7 +272,7 @@ L.circleMarker([47.6139, -122.31968], {
 An excerpt from a concert featuring a smaller artist, Xavier So Based,  just before he performed his song, "Double Whammy." As one of his most popular tracks, the crowd buzzed with excitement. Voices shouted, '"I love you Xav!"
         <br><br>
         <audio controls>
-        <source src="am_xavier_so_based_concert.m4a">
+        <source src="audio/am_xavier_so_based_concert.m4a">
         </audio>
         `);
 
@@ -283,7 +283,7 @@ L.circleMarker([47.66234, -122.29631], {
     While buying my groceries, there was a speaker playing pop music on the ceiling! It was really relaxing and improved my shopping experience at QFC!
     <br><br>
     <audio controls>
-    <source src="dz_qfc_music.m4a">
+    <source src="audio/dz_qfc_music.m4a">
     </audio>
     `);
 
@@ -294,7 +294,7 @@ L.circleMarker([47.65459, -122.30739], {
     In my quiz section, my TA decided to play Lofi Thanksgiving music during work time. I was busy doing my work, and did not really notice it playing in the background.
     <br><br>
     <audio controls>
-    <source src="dz_section_lofi.m4a">
+    <source src="audio/dz_section_lofi.m4a">
     </audio>
     `);
 
@@ -304,6 +304,6 @@ L.circleMarker([47.6652, -122.29883], {
 }).addTo(map).bindPopup(`<h3>Daniel Z: Clash Royale Music</h3>
         When hanging out with a friend, I heard him playing Clash Royale on his phone. It is a game that brings my friend and I lots of joy (and sometimes anger)! 
         <audio controls>
-        <source src="dz_clash_royale.m4a">
+        <source src="audio/dz_clash_royale.m4a">
         </audio>
         `);
