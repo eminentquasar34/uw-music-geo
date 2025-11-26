@@ -188,3 +188,13 @@ I was walking down the Ave zoned out, thinking about whatever my to do list, whe
     <audio controls>    
     <source src="audio/rwm_avole_on_ave.m4a">
                   </audio>`);
+
+L.circleMarker([47.65368, -122.31386], {
+  color: YELLOW,
+  radius: 15,
+}).addTo(map).bindPopup(`<h3>Ruth WM: Car Mechanics Pop Up Shop</h3>
+If I am ever walking through this area late at night, a makeshift car mechanics business will set up shop for the night. Generational families will gather bringing food, car parts, and hispanic culture. Hearing the accents and music that I grew up is like music to my ears.
+    <br><br>
+    <audio controls>    
+    <source src="audio/rwm_car_mechanics_pop_up_shop.m4a">
+                  </audio>`);
