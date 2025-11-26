@@ -275,3 +275,35 @@ An excerpt from a concert featuring a smaller artist, Xavier So Based,  just bef
         <source src="am_xavier_so_based_concert.m4a">
         </audio>
         `);
+
+L.circleMarker([47.66234, -122.29631], {
+  color: YELLOW,
+  radius: 15,
+}).addTo(map).bindPopup(`<h3>Daniel Z: QFC Grocery Store Music</h3>
+    While buying my groceries, there was a speaker playing pop music on the ceiling! It was really relaxing and improved my shopping experience at QFC!
+    <br><br>
+    <audio controls>
+    <source src="dz_qfc_music.m4a">
+    </audio>
+    `);
+
+L.circleMarker([47.65459, -122.30739], {
+  color: GRAY,
+  radius: 15,
+}).addTo(map).bindPopup(`<h3>Daniel Z: Lofi During Quiz Section</h3>
+    In my quiz section, my TA decided to play Lofi Thanksgiving music during work time. I was busy doing my work, and did not really notice it playing in the background.
+    <br><br>
+    <audio controls>
+    <source src="dz_section_lofi.m4a">
+    </audio>
+    `);
+
+L.circleMarker([47.6652, -122.29883], {
+  color: YELLOW,
+  radius: 15,
+}).addTo(map).bindPopup(`<h3>Daniel Z: Clash Royale Music</h3>
+        When hanging out with a friend, I heard him playing Clash Royale on his phone. It is a game that brings my friend and I lots of joy (and sometimes anger)! 
+        <audio controls>
+        <source src="dz_clash_royale.m4a">
+        </audio>
+        `);
