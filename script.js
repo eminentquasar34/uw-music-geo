@@ -255,7 +255,7 @@ On my way down to class, the elevator music lifted my spirits and gave me a brie
     </audio>`);
 
 L.circleMarker([47.6559, -122.30949], {
-  color: RED,
+  color: YELLOW,
   radius: 15,
 }).addTo(map).bindPopup(`<h3>Alexis M: Rain in Red Square</h3>
     On my walk to class, I listened closely to the gentle patter of rain on my umbrella. It's quiet, soothing rhythm that caught my ear.
