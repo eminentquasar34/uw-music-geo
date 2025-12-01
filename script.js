@@ -2,6 +2,7 @@
  * Constants for colors
  */
 var GRAY = "#808080"; // Indifferent
+var ORANGE = "#FFAC1C"; // Bright Orange for anxiety
 var YELLOW = "#FFEA00"; // Bright yellow for happy
 var GREEN = "#808000"; // Olive green for disgust
 var RED = "#C41E3A"; // Cardinal red for anger
@@ -14,31 +15,43 @@ L.tileLayer("https://{s}.basemaps.cartocdn.com/light_nolabels/{z}/{x}/{y}.png", 
   attribution: "©OpenStreetMap, ©Carto",
 }).addTo(map);
 
-L.circleMarker([47.66216, -122.30001], {
-  radius: 15,
-  color: YELLOW,
-}).addTo(map).bindPopup(`
-    <h3>Daniel Z: Walking in U-Village</h3>
-    I was walking through U-Village on the way home! I was pretty nervous because I had a lot of 
-    homework that I had to do when I get home, but the music was a nice break!
-    <br>
-    <br>
-    <audio controls>
-        <source src="audio/uvill1.m4a">
-    </audio>`);
+const markers = [
+  {
+    filter: "Daniel",
+    user: "Daniel Z",
+    title: "Walking in U-Village",
+    color: YELLOW,
+    coordinates: [47.66216, -122.30001],
+    description: `I was walking through U-Village on the way home! I was pretty nervous because 
+    I had a lot of homework that I had to do when I get home, but the music was a nice break!`,
+    audio: "uvill1.m4a",
+  },
+  {
+    filter: "Daniel",
+    user: "Daniel Z",
+    title: "Walking in Red Square",
+    color: GRAY,
+    coordinates: [47.65579, -122.30921],
+    description: `There was a band playing in the distance at Red Square! I was walking to do my 
+    CCG #6 and the music was in the faint background, so I felt indifferent.`,
+    audio: "redsquareband.m4a",
+  },
+];
 
-// DZ Walking in Red Square - Gray
-L.circleMarker([47.65579, -122.30921], {
-  color: GRAY,
-  radius: 15,
-}).addTo(map).bindPopup(`
-    <h3>Daniel Z: Walking in Red Square</h3>
-    There was a band playing in the distance at Red Square! I was walking to do my CCG #6 and the 
-    music was in the faint background, so I felt indifferent.
-    <br><br>
+for (const marker of markers) {
+  L.circleMarker(marker.coordinates, {
+    radius: 15,
+    color: marker.color,
+  }).addTo(map).bindPopup(`
+    <h3>${marker.user}: ${marker.title}</h3>
+    ${marker.description}
+    <br>
+    <br>
     <audio controls>
-        <source src="audio/redsquareband.m4a">
-    </audio>`);
+      <source src="audio/${marker.audio}">
+    </audio>
+    `);
+}
 
 // JC Choir Recital Practice - Yellow
 L.circleMarker([47.65755, -122.30567], {
@@ -268,7 +281,7 @@ L.circleMarker([47.6139, -122.31968], {
   color: YELLOW,
   radius: 15,
 }).addTo(map).bindPopup(`<h3>Alexis M: Xavier So Based Concert</h3>
-An excerpt from a concert featuring a smaller artist, Xavier So Based,  just before he performed his song, "Double Whammy." As one of his most popular tracks, the crowd buzzed with excitement. Voices shouted, '"I love you Xav!"
+An excerpt from a concert featuring a smaller artist, Xavier So Based, just before he performed his song, "Double Whammy." As one of his most popular tracks, the crowd buzzed with excitement. Voices shouted, '"I love you Xav!"
         <br><br>
         <audio controls>
         <source src="audio/am_xavier_so_based_concert.m4a">
