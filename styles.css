@@ -140,6 +140,10 @@ html {
   background-color: #0047ab;
 }
 
+#orange {
+  background-color: #ffac1c;
+}
+
 .legend-color-piece {
   display: flex;
   flex-direction: column;
