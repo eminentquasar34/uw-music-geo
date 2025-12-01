@@ -15,6 +15,31 @@ L.tileLayer("https://{s}.basemaps.cartocdn.com/light_nolabels/{z}/{x}/{y}.png", 
   attribution: "©OpenStreetMap, ©Carto",
 }).addTo(map);
 
+const hexToColor = new Map();
+hexToColor.set("#808080", "GRAY");
+hexToColor.set("#FFAC1C", "ORANGE");
+hexToColor.set("#FFEA00", "YELLOW");
+hexToColor.set("#808000", "GREEN");
+hexToColor.set("#C41E3A", "RED");
+hexToColor.set("#0047AB", "BLUE");
+hexToColor.set("#FF69B4", "PINK");
+
+document.getElementById("colorFilter").addEventListener("change", updateMap);
+document.getElementById("userFilter").addEventListener("change", updateMap);
+function updateMap() {
+  const selectedColor = document.getElementById("colorFilter").value;
+  const selectedUser = document.getElementById("userFilter").value;
+  markers.forEach((m) => map.removeLayer(m.layer));
+
+  markers
+    .filter(
+      (m) =>
+        (selectedColor === "all" || hexToColor.get(m.color) === selectedColor) &&
+        (selectedUser === "all" || m.user === selectedUser)
+    )
+    .forEach((m) => m.layer.addTo(map));
+}
+
 const markers = [
   {
     user: "Daniel Z",
@@ -285,7 +310,7 @@ sense of safety.`,
 ];
 
 for (const marker of markers) {
-  L.circleMarker(marker.coordinates, {
+  marker.layer = L.circleMarker(marker.coordinates, {
     radius: 15,
     color: marker.color,
   }).addTo(map).bindPopup(`
@@ -298,5 +323,3 @@ for (const marker of markers) {
     </audio>
     `);
 }
-
-console.log(markers.length);

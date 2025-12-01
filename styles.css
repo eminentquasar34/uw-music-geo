@@ -175,3 +175,13 @@ html {
   text-align: center;
   color: white;
 }
+
+#filters-bg {
+  width: 100vw;
+  display: flex;
+  justify-content: right;
+}
+
+#filters {
+  margin-right: 5vw;
+}
