@@ -97,3 +97,77 @@ html {
 #map-button:hover {
   background: rgba(255, 255, 255, 0.05);
 }
+
+#legend {
+  text-align: center;
+  color: white;
+}
+
+#legend-colors {
+  color: white;
+  display: flex;
+  width: 80vw;
+  justify-content: space-evenly;
+}
+
+.square {
+  width: 20px;
+  height: 20px;
+  border-radius: 5px;
+}
+
+#red {
+  background-color: #c41e3a;
+}
+
+#yellow {
+  background-color: #ffea00;
+}
+
+#green {
+  background-color: #808000;
+}
+
+#gray {
+  background-color: #808080;
+}
+
+#pink {
+  background-color: #ff69b4;
+}
+
+#blue {
+  background-color: #0047ab;
+}
+
+.legend-color-piece {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#legend-bg {
+  padding-bottom: 10px;
+  width: 80vw;
+  background-color: rgba(255, 255, 255, 0.05);
+  outline: 1px solid rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(6px);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+  color: white;
+  border-radius: 40px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  text-shadow: 0 2px 6px rgba(0, 0, 0, 0.25);
+}
+
+#legend-section {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+}
+
+#map-title {
+  text-align: center;
+  color: white;
+}

@@ -2,7 +2,6 @@
  * Constants for colors
  */
 var GRAY = "#808080"; // Indifferent
-var ORANGE = "#FFBF00"; // N/A
 var YELLOW = "#FFEA00"; // Bright yellow for happy
 var GREEN = "#808000"; // Olive green for disgust
 var RED = "#C41E3A"; // Cardinal red for anger
