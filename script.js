@@ -214,12 +214,13 @@ sense of safety.`,
   },
   {
     user: "Ruth WM",
-    title: "Car Mechanics Pop Up Shop",
+    title: "Farmer's Market Live Music",
     color: YELLOW,
-    coordinates: [47.65368, -122.31386],
-    description:
-      "If I am ever walking through this area late at night, a makeshift car mechanics business will set up shop for the night. Generational families will gather bringing food, car parts, and hispanic culture. Hearing the accents and music that I grew up is like music to my ears.",
-    audio: "rwm_car_mechanics_pop_up_shop.m4a",
+    coordinates: [47.66582, -122.3129],
+    description: `Every Saturday busker's scatter across U-District's farmer's market giving the 
+    environment life. For customer's like me, this music often blends into the background of the 
+    experience. It is only when they stop, that we remember they were ever there.`,
+    audio: "rwm_farmers_market_live_music.m4a",
   },
   {
     user: "Ruth WM",
