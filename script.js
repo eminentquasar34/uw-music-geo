@@ -17,7 +17,6 @@ L.tileLayer("https://{s}.basemaps.cartocdn.com/light_nolabels/{z}/{x}/{y}.png", 
 
 const markers = [
   {
-    filter: "Daniel",
     user: "Daniel Z",
     title: "Walking in U-Village",
     color: YELLOW,
@@ -27,7 +26,6 @@ const markers = [
     audio: "uvill1.m4a",
   },
   {
-    filter: "Daniel",
     user: "Daniel Z",
     title: "Walking in Red Square",
     color: GRAY,
@@ -35,6 +33,69 @@ const markers = [
     description: `There was a band playing in the distance at Red Square! I was walking to do my 
     CCG #6 and the music was in the faint background, so I felt indifferent.`,
     audio: "redsquareband.m4a",
+  },
+  {
+    user: "Jordan C",
+    title: "Recital Choir",
+    color: YELLOW,
+    coordinates: [47.65755, -122.30567],
+    description: `I am a member of UW Recital Choir. This is a clip from our rehearsal. 
+    <br><br>
+    Singing and being surrounded by music made me feel happy. I love being immersed in community and
+     collaboratively creating something beautiful. The song from this clip is called "Hope." `,
+    audio: "jc_recital_choir_11_18.m4a",
+  },
+  {
+    user: "Ruth WM",
+    title: "Nirvana House Music",
+    color: YELLOW,
+    coordinates: [47.66171, -122.30655],
+    description: `I was filled with anxiety, briskly walking alone late at night. When I turned
+     the corner I felt the low beat of house music, heard the lyrics of a familiar song, and felt
+      warm chatter that accompanied it. Filled with subtle joy, I no longer felt completely alone
+       and comfortably walked the rest of the way home.
+<br><br>
+I rarely listen to house music, and it rarely brings me joy, but that night it provided warm 
+sense of safety.`,
+    audio: "rwm_nirvana_house_music.m4a",
+  },
+  {
+    user: "Jasmine Z",
+    title: "Amazon Truck",
+    color: GRAY,
+    coordinates: [47.65601, -122.31499],
+    description: `I encountered an Amazon track blasting Bollywood music outside of Lander Hall
+     while walking home. While loud and slightly jarring since it was late at night, the music
+      highlighted the juxtaposition between my exhausted mental state and the delivery driver's
+       energetic enthusiasm. The tempo and sheer volume of the music seemed to be the momentum
+        that was powering the driver through his late-night route.    
+`,
+    audio: "jz_amazon_truck.m4a",
+  },
+  {
+    user: "Jasmine Z",
+    title: "Happy Birthday!",
+    color: YELLOW,
+    coordinates: [47.65922, -122.30865],
+    description: `Before an Asian Business Student Association meeting in PACCAR Hall, officers
+     spontaneously sang Happy Birthday to the president of the club and presented him with a cake.
+      It was heartwarming to see how the club has transformed professional relationships into 
+      lasting friendships.
+`,
+    audio: "jz_happy_birthday.m4a",
+  },
+  {
+    user: "Jordan C",
+    title: "Loud Music From Speaker",
+    color: GREEN,
+    coordinates: [47.66363, -122.31316],
+    description: `(Garbled sample taken from low-quality earbud microphone) <br><br>
+    I was walking home and heard this loud music blasting from the people in front of me. One of 
+    them had a speaker in their backpack. I didn't mind the music type, but the volume was too 
+    loud for me, and it made me frustrated. I'm sensitive to loud sounds, and it irks me when 
+    people are insensitive and do things like play loud music or rev their engines in public.
+`,
+    audio: "jc_sidewalk_speaker.m4a",
   },
 ];
 
@@ -52,77 +113,6 @@ for (const marker of markers) {
     </audio>
     `);
 }
-
-// JC Choir Recital Practice - Yellow
-L.circleMarker([47.65755, -122.30567], {
-  color: YELLOW,
-  radius: 15,
-})
-  .addTo(map)
-  .bindPopup(
-    `
-    <h3>Jordan C: Recital Choir</h3>
-    I am a member of UW Recital Choir. This is a clip from our rehearsal. 
-    <br>
-    <br>
-Singing and being surrounded by music made me feel happy. I love being immersed in community and collaboratively creating something beautiful. The song from this clip is called "Hope." 
-<br><br>
-<audio controls>
-        <source src="audio/jc_recital_choir_11_18.m4a">
-    </audio>`
-  );
-
-// RWM Nirvana Music - Yellow
-L.circleMarker([47.66171, -122.30655], {
-  color: YELLOW,
-  radius: 15,
-})
-  .addTo(map)
-  .bindPopup(
-    `<h3>Ruth WM: Nirvana House Music</h3>
-I was filled with anxiety, briskly walking alone late at night. When I turned the corner I felt the low beat of house music, heard the lyrics of a familiar song, and felt warm chatter that accompanied it. Filled with subtle joy, I no longer felt completely alone and comfortably walked the rest of the way home.
-<br><br>
-I rarely listen to house music, and it rarely brings me joy, but that night it provided warm sense of safety.       
-<br><br>
-<audio controls>
-        <source src="audio/rwm_nirvana_house_music.m4a">
-    </audio>`
-  );
-
-// JZ Amazon Truck
-L.circleMarker([47.65601, -122.31499], {
-  color: GRAY,
-  radius: 15,
-}).addTo(map).bindPopup(`<h3>Jasmine Z: Amazon Truck</h3>
-I encountered an Amazon track blasting Bollywood music outside of Lander Hall while walking home. While loud and slightly jarring since it was late at night, the music highlighted the juxtaposition between my exhausted mental state and the delivery driver's energetic enthusiasm. The tempo and sheer volume of the music seemed to be the momentum that was powering the driver through his late-night route.    
-<br><br>
-<audio controls>
-        <source src="audio/jz_amazon_truck.m4a">
-    </audio>`);
-
-// JZ Happy Birthday
-L.circleMarker([47.65922, -122.30865], {
-  color: YELLOW,
-  radius: 15,
-}).addTo(map).bindPopup(`<h3>Jasmine Z: Happy Birthday</h3>
-Before an Asian Business Student Association meeting in PACCAR Hall, officers spontaneously sang Happy Birthday to the president of the club and presented him with a cake. It was heartwarming to see how the club has transformed professional relationships into lasting friendships.
-<br><br>
-<audio controls>
-        <source src="audio/jz_happy_birthday.m4a">
-    </audio>`);
-
-// JC Loud Music from Speaker
-L.circleMarker([47.66363, -122.31316], {
-  color: GREEN,
-  radius: 15,
-}).addTo(map).bindPopup(`<h3>Jordan C: Loud Music From Speaker</h3>
-(Garbled sample taken from low-quality earbud microphone)
-<br><br>
-I was walking home and heard this loud music blasting from the people in front of me. One of them had a speaker in their backpack. I didn't mind the music type, but the volume was too loud for me, and it made me frustrated. I'm sensitive to loud sounds, and it irks me when people are insensitive and do things like play loud music or rev their engines in public.
-    <br><br>
-  <audio controls>
-          <source src="audio/jc_sidewalk_speaker.m4a">
-      </audio>`);
 
 // JC Climbing Gym
 L.circleMarker([47.66153, -122.31294], {
@@ -253,7 +243,7 @@ L.circleMarker([47.6549, -122.30653], {
     To start off class this morning, my Mandarin teacher introduced different music genres and their names in Chinese. We proceeded to listen to a variety of Rock and Roll songs to analyze the lyrics. What a fun and engaging way to start the day!
     <br><br>
     <audio controls>
-    <source src="audio/am_rock_and_roll_chinese_class.m4a>
+    <source src="audio/am_rock_and_roll_chinese_class.m4a">
     </audio>`);
 
 L.circleMarker([47.66208, -122.31449], {
@@ -263,7 +253,7 @@ L.circleMarker([47.66208, -122.31449], {
 On my way down to class, the elevator music lifted my spirits and gave me a brief pause from the morning chaos ... an intentional moment before my first class of the day.
     <br><br>
     <audio controls>
-    <source src="audio/am_elevator_music.m4a>
+    <source src="audio/am_elevator_music.m4a">
     </audio>`);
 
 L.circleMarker([47.6559, -122.30949], {
