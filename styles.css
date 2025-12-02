@@ -184,4 +184,48 @@ html {
 
 #filters {
   margin-right: 5vw;
+  display: flex;
+}
+
+.select-wrapper {
+  position: relative;
+  width: 200px;
+  margin-left: 10px;
+  margin-bottom: 10px;
+}
+
+.select-wrapper select {
+  appearance: none; /* remove default arrow */
+  -webkit-appearance: none;
+  -moz-appearance: none;
+
+  width: 100%;
+  padding: 10px 14px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background: white;
+  font-size: 14px;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+/* Custom arrow */
+.select-wrapper::after {
+  content: "▼";
+  position: absolute;
+  right: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  pointer-events: none;
+  font-size: 10px;
+  color: #666;
+}
+
+.select-wrapper select:hover {
+  border-color: #999;
+}
+
+.select-wrapper select:focus {
+  border-color: #4a90e2;
+  box-shadow: 0 0 0 3px rgba(74, 144, 226, 0.2);
 }
