@@ -41,7 +41,7 @@ Each point on the map contains:
   - An embedded audio clip
 
 The basemap uses Carto for a clean, minimal visual style.  
-Audio files are hosted externally (Google Drive), and attributes were manually added to the dataset collected in Google My Maps.
+Audio files were first collected in Google Drive and attributes were collected in Google My Maps before both were integrated into this repository.
 
 ---
 
