@@ -246,7 +246,7 @@ sense of safety.`,
   {
     user: "Alexis M",
     title: "Rock and Roll in Mandarin Class",
-    color: GRAY,
+    color: YELLOW,
     coordinates: [47.6549, -122.30653],
     description: `To start off class this morning, my Mandarin teacher introduced different music genres and 
       their names in Chinese. We proceeded to listen to a variety of Rock and Roll songs to 
